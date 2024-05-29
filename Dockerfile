@@ -7,7 +7,7 @@ ENV NODE_ENV production
 COPY . .
 
 RUN apt update
-RUN apt -y install npm
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends npm
 RUN which bash
 RUN ls -la
 RUN apt update
