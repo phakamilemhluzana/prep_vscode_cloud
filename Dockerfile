@@ -6,7 +6,6 @@ ENV NODE_ENV production
 
 COPY . .
 
-RUN npm ci
 RUN which bash
 RUN ls -la
 RUN apt update
